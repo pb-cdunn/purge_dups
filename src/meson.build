@@ -49,7 +49,7 @@ if not meson.is_subproject()
     c_args : cflags,
   )
   executable(
-    'calcuts',
+    'purge_dups_calcuts',
     files([
         'calcuts.c',
     ]),
@@ -59,7 +59,7 @@ if not meson.is_subproject()
     c_args : cflags,
   )
   executable(
-    'get_seqs',
+    'purge_dups_get_seqs',
     files([
         'get_seqs.c',
     ]),
@@ -69,7 +69,7 @@ if not meson.is_subproject()
     c_args : cflags,
   )
   executable(
-    'ngscstat',
+    'purge_dups_ngscstat',
     files([
         'ngscstat.c',
     ]),
@@ -79,7 +79,7 @@ if not meson.is_subproject()
     c_args : cflags,
   )
   executable(
-    'pbcstat',
+    'purge_dups_pbcstat',
     files([
         'pbcstat.c',
     ]),
@@ -89,7 +89,7 @@ if not meson.is_subproject()
     c_args : cflags,
   )
   executable(
-    'split_fa',
+    'purge_dups_split_fa',
     files([
         'split_fa.c',
     ]),
