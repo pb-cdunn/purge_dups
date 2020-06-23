@@ -1,8 +1,3 @@
-# We cannot yet use c_std=c11 because of these errors:
-#   get_seqs.c:357:17: error: 'optarg' undeclared
-#   get_seqs.c:392:6: error: 'optind' undeclared
-# We need to include <unistd.h>
-
 project(
   'purge_dups',
   ['c'],
@@ -10,7 +5,7 @@ project(
   default_options : [
     'buildtype=release',
     'warning_level=3',
-    #'c_std=c11',
+    'c_std=c11',
     'b_ndebug=if-release'],
   license : 'MIT',
   meson_version : '>= 0.46.0')

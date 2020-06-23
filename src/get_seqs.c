@@ -16,6 +16,7 @@
  * =====================================================================================
  */
 #include <stdio.h>
+#include <unistd.h>
 #include <zlib.h>
 
 #include "sdict.h"
