@@ -56,6 +56,15 @@ If you also want to try k-mer comparision plot, run the following commands to in
 git clone https://github.com/dfguan/KMC.git 
 cd KMC && make -j 16
 ```
+
+### Installation using Meson/Ninja
+
+PREFIX_ARG?=/usr/local
+
+cd purge_dups/src
+mkdir build && meson --prefix ${PREFIX_ARG} --buildtype release build .
+ninja -C build install
+
 ## <a name="usg"> </a> Usage (Only tested on farm)
 
 ### Step 1. Use pd\_config.py to generate a configuration file. 
